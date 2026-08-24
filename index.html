@@ -1,746 +1,412 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-    <title>PANKAJ BHARDWAJ | Stock Market Telegram</title>
-    
-    <!-- ✅ NEW META PIXEL CODE (UPDATED) - ID: 909150875148886 -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '909150875148886');
-        fbq('track', 'PageView', {
-            page_type: 'Telegram_Join_Landing',
-            creator: 'PANKAJ_BHARDWAJ',
-            niche: 'Stock_Market_Options_Nifty_BankNifty',
-            pixel_id: '909150875148886'
-        });
-        
-        // Additional ViewContent for better analytics
-        fbq('track', 'ViewContent', {
-            content_name: 'PANKAJ_BHARDWAJ_Landing_Page',
-            content_category: 'Stock_Market_Telegram',
-            content_type: 'landing_page',
-            currency: 'INR',
-            pixel_id: '909150875148886'
-        });
-        
-        console.log('✅ NEW Facebook Pixel Initialized - Pixel ID: 909150875148886');
-    </script>
-    
-    <noscript>
-        <img height="1" width="1" style="display:none" 
-             src="https://www.facebook.com/tr?id=909150875148886&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>PANKAJ BHARDWAJ · स्टॉक मार्केट शिक्षा</title>
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    }
 
-        body {
-            background: linear-gradient(135deg, #0f0714 0%, #1a0f24 50%, #0a0a12 100%);
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Poppins', 'Roboto', sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 16px;
-        }
+    body {
+      background: linear-gradient(145deg, #0b1a2a 0%, #0e1f30 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
 
-        .card {
-            max-width: 100%;
-            width: 100%;
-            background: rgba(18, 18, 30, 0.95);
-            backdrop-filter: blur(2px);
-            border-radius: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
+    /* main card – telegram landing style */
+    .landing-card {
+      max-width: 480px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 48px 48px 32px 32px;
+      padding: 28px 22px 38px;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 215, 0, 0.15);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      transition: all 0.2s;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .content {
-            padding: 24px 20px 36px;
-        }
+    /* subtle animated glow */
+    .landing-card::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      left: -30%;
+      width: 160%;
+      height: 160%;
+      background: radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.03), transparent 70%);
+      animation: glowDrift 12s infinite alternate ease-in-out;
+      pointer-events: none;
+    }
 
-        .channel-badge {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 24px;
-        }
+    @keyframes glowDrift {
+      0% { transform: translate(0, 0) scale(1); }
+      100% { transform: translate(10px, -20px) scale(1.1); }
+    }
 
-        .logo-circle {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            overflow: hidden;
-            background: #1a1a1a;
-            border: 2px solid #a855f7;
-            box-shadow: 0 8px 20px rgba(168,85,247,0.3);
-            flex-shrink: 0;
-        }
+    /* logo */
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 2;
+    }
 
-        .logo-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .logo-img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #f5b042;
+      box-shadow: 0 8px 25px rgba(245, 176, 66, 0.3);
+      background: #1f2e3b;
+      transition: transform 0.3s;
+    }
 
-        .channel-name h2 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #ffffff, #d8b4fe);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            letter-spacing: -0.5px;
-            line-height: 1.2;
-        }
+    .logo-img:hover {
+      transform: scale(1.02);
+    }
 
-        .channel-name p {
-            color: #888888;
-            font-size: 0.75rem;
-            margin-top: 6px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            flex-wrap: wrap;
-        }
+    /* name */
+    .instructor-name {
+      font-size: 2.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #fff7e6;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      margin-top: 4px;
+      position: relative;
+      z-index: 2;
+    }
 
-        .verified {
-            background: #a855f720;
-            padding: 3px 10px;
-            border-radius: 30px;
-            font-size: 0.65rem;
-            color: #d8b4fe;
-            font-weight: 600;
-        }
+    .instructor-name span {
+      color: #f5b042;
+      font-weight: 300;
+      display: inline-block;
+    }
 
-        .join-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            width: 100%;
-            background: linear-gradient(135deg, #a855f7, #7c3aed);
-            border: none;
-            padding: 16px 12px;
-            font-size: 1.1rem;
-            font-weight: 800;
-            color: #ffffff;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 60px;
-            transition: all 0.2s ease;
-            box-shadow: 0 8px 20px rgba(168,85,247,0.4);
-            letter-spacing: 0.5px;
-            cursor: pointer;
-        }
+    .tagline {
+      color: #b8cfec;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      background: rgba(0, 0, 0, 0.3);
+      display: inline-block;
+      padding: 6px 20px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      margin-top: 4px;
+      margin-bottom: 12px;
+      font-weight: 400;
+      position: relative;
+      z-index: 2;
+    }
 
-        .join-btn:hover {
-            background: linear-gradient(135deg, #7c3aed, #6d28d9);
-            transform: scale(0.98);
-            box-shadow: 0 4px 12px rgba(168,85,247,0.5);
-        }
+    .desc {
+      color: #d4e2f5;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: rgba(0, 0, 0, 0.25);
+      padding: 14px 16px;
+      border-radius: 30px;
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin: 10px 0 22px;
+      position: relative;
+      z-index: 2;
+    }
 
-        .join-btn:active {
-            transform: scale(0.96);
-        }
+    .desc i {
+      color: #f5b042;
+      margin-right: 6px;
+    }
 
-        .top-button {
-            margin-bottom: 24px;
-        }
+    /* BUTTONS section */
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 20px 0 20px;
+      position: relative;
+      z-index: 5;
+    }
 
-        .bottom-button {
-            margin-top: 28px;
-            margin-bottom: 12px;
-        }
+    /* main big join button (center, below name) */
+    .btn-primary {
+      background: linear-gradient(135deg, #f5b042, #e8922a);
+      border: none;
+      padding: 18px 22px;
+      border-radius: 80px;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #0b1a2a;
+      box-shadow: 0 12px 30px rgba(245, 176, 66, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: all 0.25s ease;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      letter-spacing: 0.5px;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .tagline {
-            background: rgba(255,255,255,0.03);
-            padding: 12px 16px;
-            border-radius: 24px;
-            margin: 20px 0 20px 0;
-            border-left: 4px solid #a855f7;
-            font-weight: 500;
-            color: #cccccc;
-            font-size: 0.85rem;
-            text-align: center;
-        }
+    .btn-primary i {
+      font-size: 1.8rem;
+      color: #0b1a2a;
+    }
 
-        .points-section {
-            background: rgba(0,0,0,0.4);
-            border-radius: 28px;
-            padding: 20px 16px;
-            margin: 20px 0 0;
-            border: 1px solid rgba(255,255,255,0.06);
-        }
+    .btn-primary:hover {
+      transform: scale(1.02);
+      box-shadow: 0 16px 40px rgba(245, 176, 66, 0.5);
+      background: linear-gradient(135deg, #fcc062, #ed9e38);
+    }
 
-        .points-section h3 {
-            color: #d8b4fe;
-            font-size: 1rem;
-            margin-bottom: 16px;
-            text-align: center;
-            letter-spacing: 0px;
-        }
+    .btn-primary:active {
+      transform: scale(0.97);
+    }
 
-        .point-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 14px;
-            padding: 5px 0;
-        }
+    /* popup + move animation (combined) */
+    .btn-pop-move {
+      animation: popMove 2.6s infinite alternate ease-in-out;
+      transform-origin: center;
+      will-change: transform;
+    }
 
-        .point-icon {
-            font-size: 22px;
-            min-width: 32px;
-        }
+    @keyframes popMove {
+      0% { transform: scale(1) translateY(0px); }
+      30% { transform: scale(1.04) translateY(-5px); }
+      60% { transform: scale(0.98) translateY(3px); }
+      100% { transform: scale(1.02) translateY(-4px); }
+    }
 
-        .point-text {
-            color: #e0e0e0;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
+    /* secondary join button (top) */
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1.5px solid #f5b042;
+      padding: 14px 18px;
+      border-radius: 60px;
+      color: #fff7e6;
+      font-weight: 600;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      letter-spacing: 0.3px;
+    }
 
-        .point-text strong {
-            color: #d8b4fe;
-            font-weight: 700;
-        }
+    .btn-secondary i {
+      color: #f5b042;
+      font-size: 1.5rem;
+    }
 
-        .disclaimer {
-            background: #a855f710;
-            border-left: 3px solid #a855f7;
-            padding: 10px 12px;
-            margin-top: 16px;
-            border-radius: 16px;
-            font-size: 0.75rem;
-            color: #d8b4fe;
-            font-weight: 600;
-            text-align: center;
-        }
+    .btn-secondary:hover {
+      background: rgba(245, 176, 66, 0.15);
+      border-color: #fcc062;
+      transform: scale(1.02);
+    }
 
-        .trust-badge {
-            text-align: center;
-            font-size: 0.65rem;
-            color: #666666;
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
+    .btn-secondary:active {
+      transform: scale(0.97);
+    }
 
-        hr {
-            border-color: rgba(255,255,255,0.08);
-            margin: 20px 0 12px;
-        }
+    .small-note {
+      color: #a0bada;
+      font-size: 0.75rem;
+      margin-top: 24px;
+      opacity: 0.8;
+      letter-spacing: 0.3px;
+      border-top: 1px solid rgba(255, 215, 0, 0.1);
+      padding-top: 22px;
+      position: relative;
+      z-index: 2;
+    }
 
-        .footer-text {
-            text-align: center;
-            font-size: 0.65rem;
-            color: #444444;
-            margin-top: 8px;
-        }
-        
-        /* Toast notification */
-        .toast-msg {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, #a855f7, #7c3aed);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 40px;
-            font-size: 13px;
-            font-weight: 600;
-            z-index: 1000;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-            white-space: nowrap;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-        }
-        .toast-msg.show {
-            opacity: 1;
-        }
+    .small-note i {
+      color: #f5b042;
+      margin: 0 4px;
+    }
 
-        @media (max-width: 480px) {
-            .content {
-                padding: 20px 16px 30px;
-            }
-            .channel-name h2 {
-                font-size: 1.4rem;
-            }
-            .logo-circle {
-                width: 60px;
-                height: 60px;
-            }
-            .join-btn {
-                padding: 14px 10px;
-                font-size: 1rem;
-            }
-            .point-text {
-                font-size: 0.85rem;
-            }
-            .tagline {
-                font-size: 0.8rem;
-            }
-            .toast-msg {
-                font-size: 11px;
-                white-space: nowrap;
-                bottom: 20px;
-            }
-        }
+    /* FB pixel noscript fallback (invisible) */
+    .fb-pixel-fallback {
+      display: none;
+    }
 
-        @media (min-width: 500px) {
-            .card {
-                max-width: 460px;
-            }
-        }
-    </style>
+    /* responsive */
+    @media (max-width: 400px) {
+      .landing-card { padding: 20px 14px 30px; }
+      .instructor-name { font-size: 1.8rem; }
+      .btn-primary { font-size: 1.2rem; padding: 15px 16px; }
+      .btn-secondary { font-size: 1rem; padding: 12px 14px; }
+    }
+  </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="content">
-        <!-- Logo + Channel Name -->
-        <div class="channel-badge">
-            <div class="logo-circle">
-                <img src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" alt="PANKAJ BHARDWAJ">
-            </div>
-            <div class="channel-name">
-                <h2>PANKAJ BHARDWAJ</h2>
-                <p>📈 Stock Market Expert <span class="verified">✓ OFFICIAL TG</span></p>
-            </div>
-        </div>
+  <!-- ===== MAIN LANDING CARD ===== -->
+  <div class="landing-card">
 
-        <!-- BUTTON 1 - TOP with updated link -->
-        <div class="top-button">
-            <a id="topJoinBtn" href="https://t.me/+FwX_Y9KLcCpkYmE1" target="_blank" class="join-btn">
-                🚀 JOIN TELEGRAM CHANNEL
-            </a>
-        </div>
-
-        <div class="tagline">
-            🎯 Professional Options & Index Trading | Smart Money Moves 🚀
-        </div>
-
-        <!-- Points Section -->
-        <div class="points-section">
-            <h3>⚡ NIFTY • BANKNIFTY • STOCK OPTIONS ⚡</h3>
-            
-            <div class="point-item">
-                <span class="point-icon">🎯</span>
-                <span class="point-text"><strong>✅ Get upto 200-400 Points Per Call</strong></span>
-            </div>
-            
-            <div class="point-item">
-                <span class="point-icon">📊</span>
-                <span class="point-text"><strong>✅ 90%+ Accuracy Ratio</strong></span>
-            </div>
-            
-            <div class="point-item">
-                <span class="point-icon">📞</span>
-                <span class="point-text"><strong>✅ 5-6 Premium Calls Daily</strong></span>
-            </div>
-            
-            <div class="point-item">
-                <span class="point-icon">🏆</span>
-                <span class="point-text"><strong>✅ 5 Best Trades for All Members</strong></span>
-            </div>
-            
-            <div class="disclaimer">
-                ⚠️ DISCLAIMER :- DAILY 3 FREE DEMO CALLS ✅
-            </div>
-        </div>
-
-        <!-- BUTTON 2 - BOTTOM with updated link -->
-        <div class="bottom-button">
-            <a id="bottomJoinBtn" href="https://t.me/+FwX_Y9KLcCpkYmE1" target="_blank" class="join-btn">
-                🚀 JOIN TELEGRAM CHANNEL
-            </a>
-        </div>
-
-        <!-- Trust Signals -->
-        <div class="trust-badge">
-            <span>🔒 100% Free Channel</span>
-            <span>⏱️ Live Market Updates</span>
-            <span>🎯 Nifty/BankNifty Focus</span>
-            <span>⭐ 20k+ Active Members</span>
-        </div>
-
-        <hr />
-        <div class="footer-text">
-            📍 PANKAJ BHARDWAJ | Trade With Accuracy & Discipline
-        </div>
+    <!-- LOGO -->
+    <div class="logo-wrapper">
+      <img 
+        src="https://karanmetalabe.com/wp-content/uploads/2026/08/images-21.jpg" 
+        alt="PANKAJ BHARDWAJ Logo" 
+        class="logo-img"
+        loading="lazy"
+      >
     </div>
-</div>
 
-<!-- Toast notification for tracking feedback -->
-<div id="trackingToast" class="toast-msg">✅ Tracking confirmed! Redirecting to Telegram...</div>
+    <!-- NAME (with span for styling) -->
+    <div class="instructor-name">
+      PANKAJ <span>BHARDWAJ</span>
+    </div>
 
-<!-- Advanced Facebook Pixel Event Tracking with Subscribe Button Tracking (NEW PIXEL) -->
-<script>
+    <!-- tagline -->
+    <div class="tagline">
+      <i class="fas fa-chart-line" style="margin-right: 8px;"></i> स्टॉक मार्केट शिक्षा
+    </div>
+
+    <!-- description -->
+    <div class="desc">
+      <i class="fas fa-graduation-cap"></i> 
+      सीखें, समझें, कमाएँ — विशेषज्ञ मार्गदर्शन के साथ
+    </div>
+
+    <!-- BUTTONS -->
+    <div class="button-group">
+
+      <!-- 🔹 BUTTON 1: TOP (secondary) – Join Telegram Channel -->
+      <button class="btn-secondary" id="joinTopBtn">
+        <i class="fab fa-telegram-plane"></i> चैनल ज्वाइन करें
+      </button>
+
+      <!-- 🔹 BUTTON 2: CENTER (primary) – big Join, below name, with pop & move animation -->
+      <button class="btn-primary btn-pop-move" id="joinMainBtn">
+        <i class="fab fa-telegram"></i> ज्वाइन करें
+      </button>
+
+      <!-- (optional) extra micro text -->
+      <div style="font-size: 0.8rem; color: #b8cfec; opacity: 0.7; margin-top: -6px; position: relative; z-index: 2;">
+        <i class="fas fa-arrow-right" style="color: #f5b042;"></i> 10,000+ छात्र
+      </div>
+    </div>
+
+    <!-- footer note -->
+    <div class="small-note">
+      <i class="fas fa-lock"></i> 100% निःशुल्क · आज ही जुड़ें 
+      <i class="fas fa-bolt" style="margin-left: 6px;"></i>
+    </div>
+  </div>
+
+  <!-- ===== META PIXEL (FB) ===== -->
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '909150875148886');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+      src="https://www.facebook.com/tr?id=909150875148886&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- ===== EVENT TRACKING + TELEGRAM REDIRECT ===== -->
+  <script>
     (function() {
-        // ✅ NEW PIXEL ID & Telegram Link
-        const PIXEL_ID = '909150875148886';
-        const TELEGRAM_LINK = 'https://t.me/+FwX_Y9KLcCpkYmE1';
-        const BRAND_NAME = 'PANKAJ_BHARDWAJ';
-        
-        // Helper to show toast message
-        function showToastMessage(message, duration = 1800) {
-            const toast = document.getElementById('trackingToast');
-            if (toast) {
-                toast.textContent = message || '✅ Tracking confirmed! Redirecting to Telegram...';
-                toast.classList.add('show');
-                setTimeout(() => {
-                    toast.classList.remove('show');
-                }, duration);
-            }
-        }
-        
-        // Track Subscribe/Join button click with full event data for Meta Pixel (NEW PIXEL)
-        function trackSubscribeClick(buttonElement, buttonPosition) {
-            if (typeof fbq === 'function') {
-                // 1. Lead event (most important for conversions - when user joins)
-                fbq('track', 'Lead', {
-                    content_name: 'PANKAJ_BHARDWAJ_Telegram_Join',
-                    content_category: 'Stock_Market_Subscription',
-                    button_position: buttonPosition,
-                    channel_name: 'PANKAJ_BHARDWAJ_OFFICIAL',
-                    currency: 'INR',
-                    value: 1,
-                    predicted_ltv: 0,
-                    pixel_id: PIXEL_ID,
-                    brand: BRAND_NAME
-                });
-                
-                // 2. Subscribe event (standard Meta event)
-                fbq('track', 'Subscribe', {
-                    content_name: 'PANKAJ_BHARDWAJ_Telegram_Channel',
-                    status: 'subscribed',
-                    channel_name: BRAND_NAME,
-                    subscription_method: 'telegram_join_link',
-                    button_position: buttonPosition,
-                    pixel_id: PIXEL_ID
-                });
-                
-                // 3. CompleteRegistration event
-                fbq('track', 'CompleteRegistration', {
-                    registration_method: 'Telegram_Join_Button',
-                    content_name: 'PANKAJ_BHARDWAJ_Stock_Channel',
-                    status: 'initiated_join',
-                    button_used: buttonElement.id,
-                    button_position: buttonPosition,
-                    pixel_id: PIXEL_ID
-                });
-                
-                // 4. Contact event
-                fbq('track', 'Contact', {
-                    contact_method: 'Telegram_Channel_Join',
-                    content_name: 'PANKAJ_BHARDWAJ_Telegram',
-                    button_position: buttonPosition,
-                    pixel_id: PIXEL_ID
-                });
-                
-                // 5. Custom: JoinTelegramClick
-                fbq('trackCustom', 'JoinTelegramClick', {
-                    event_source: 'PANKAJ_BHARDWAJ_LandingPage',
-                    button_position: buttonPosition,
-                    button_id: buttonElement.id,
-                    url_destination: TELEGRAM_LINK,
-                    device_type: /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ? 'mobile' : 'desktop',
-                    pixel_id: PIXEL_ID,
-                    brand: BRAND_NAME
-                });
-                
-                // 6. Custom: PankajSubscribeEvent (NEW PIXEL)
-                fbq('trackCustom', 'PankajSubscribeEvent', {
-                    trader_name: BRAND_NAME,
-                    button_position: buttonPosition,
-                    button_id: buttonElement.id,
-                    offer_type: 'NIFTY_BANKNIFTY_OPTIONS',
-                    accuracy: '90%+',
-                    daily_calls: '5-6',
-                    pixel_id: PIXEL_ID,
-                    timestamp: new Date().toISOString()
-                });
-                
-                // 7. Custom: NewPixel909JoinEvent (specific to NEW pixel)
-                fbq('trackCustom', 'NewPixel909JoinEvent', {
-                    pixel_id: PIXEL_ID,
-                    button_position: buttonPosition,
-                    channel_link: TELEGRAM_LINK,
-                    brand: BRAND_NAME,
-                    action: 'telegram_join_click',
-                    timestamp: new Date().toISOString()
-                });
-                
-                console.log(`✅ NEW Pixel (${PIXEL_ID}) Events Tracked: Lead, Subscribe, CompleteRegistration, Contact, JoinTelegramClick, PankajSubscribeEvent, NewPixel909JoinEvent (${buttonPosition} button) | ${BRAND_NAME}`);
-                showToastMessage(`🎯 Joined! Pixel event tracked (${buttonPosition})`, 1500);
-            } else {
-                console.error('❌ Facebook Pixel not initialized, event not tracked');
-                showToastMessage(`⚠️ Joining channel...`, 1200);
-            }
-        }
-        
-        // Enhanced click handler with proper pixel tracking before navigation
-        function handleButtonClick(event, position) {
-            const targetUrl = event.currentTarget.href;
-            
-            // Prevent double tracking
-            if (event.currentTarget.hasAttribute('data-tracked')) {
-                return true;
-            }
-            
-            // Mark as tracked to avoid duplicate events
-            event.currentTarget.setAttribute('data-tracked', 'true');
-            
-            // Track the pixel events
-            trackSubscribeClick(event.currentTarget, position);
-            
-            // Allow navigation after a micro delay for pixel to fire properly
-            if (targetUrl && targetUrl !== '#') {
-                event.preventDefault();
-                setTimeout(function() {
-                    window.open(targetUrl, '_blank');
-                }, 200);
-            }
-            
-            return false;
-        }
-        
-        // Replace buttons with fresh ones to avoid duplicate listeners and ensure clean tracking
-        const topBtn = document.getElementById('topJoinBtn');
-        const bottomBtn = document.getElementById('bottomJoinBtn');
-        
-        if (topBtn) {
-            const newTopBtn = topBtn.cloneNode(true);
-            topBtn.parentNode.replaceChild(newTopBtn, topBtn);
-            newTopBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                handleButtonClick(e, 'Top');
-            });
-            newTopBtn.href = TELEGRAM_LINK;
-        }
-        
-        if (bottomBtn) {
-            const newBottomBtn = bottomBtn.cloneNode(true);
-            bottomBtn.parentNode.replaceChild(newBottomBtn, bottomBtn);
-            newBottomBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                handleButtonClick(e, 'Bottom');
-            });
-            newBottomBtn.href = TELEGRAM_LINK;
-        }
-        
-        // Track scroll depth for engagement analytics
-        let maxScrollPercent = 0;
-        let scrollTracked25 = false;
-        let scrollTracked50 = false;
-        let scrollTracked75 = false;
-        
-        function trackScrollDepth() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            if (docHeight <= 0) return;
-            const scrollPercent = (scrollTop / docHeight) * 100;
-            
-            if (scrollPercent > maxScrollPercent) {
-                maxScrollPercent = Math.min(100, Math.floor(scrollPercent));
-            }
-            
-            if (!scrollTracked25 && maxScrollPercent >= 25) {
-                scrollTracked25 = true;
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ScrollDepth', { depth: '25%', page: 'PANKAJ_BHARDWAJ_Landing', brand: BRAND_NAME, pixel_id: PIXEL_ID });
-                    console.log(`📊 Scroll depth 25% tracked | ${BRAND_NAME}`);
-                }
-            }
-            if (!scrollTracked50 && maxScrollPercent >= 50) {
-                scrollTracked50 = true;
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ScrollDepth', { depth: '50%', page: 'PANKAJ_BHARDWAJ_Landing', brand: BRAND_NAME, pixel_id: PIXEL_ID });
-                    console.log(`📊 Scroll depth 50% tracked | ${BRAND_NAME}`);
-                }
-            }
-            if (!scrollTracked75 && maxScrollPercent >= 75) {
-                scrollTracked75 = true;
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ScrollDepth', { depth: '75%', page: 'PANKAJ_BHARDWAJ_Landing', brand: BRAND_NAME, pixel_id: PIXEL_ID });
-                    console.log(`📊 Scroll depth 75% tracked | ${BRAND_NAME}`);
-                }
-            }
-        }
-        
-        // Throttle scroll tracking
-        let scrollTimeout;
-        window.addEventListener('scroll', function() {
-            if (scrollTimeout) clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(trackScrollDepth, 300);
-        });
-        
-        // Track time on page for engagement metrics
-        let startTime = Date.now();
-        let trackedTime30 = false;
-        let trackedTime60 = false;
-        
-        setInterval(function() {
-            const elapsedSeconds = Math.floor((Date.now() - startTime) / 1000);
-            if (!trackedTime30 && elapsedSeconds >= 30) {
-                trackedTime30 = true;
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'TimeOnPage', { duration: '30s', page: 'PANKAJ_BHARDWAJ_Landing', brand: BRAND_NAME, pixel_id: PIXEL_ID });
-                    console.log(`⏱️ Time on page 30 seconds tracked | ${BRAND_NAME}`);
-                }
-            }
-            if (!trackedTime60 && elapsedSeconds >= 60) {
-                trackedTime60 = true;
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'TimeOnPage', { duration: '60s', page: 'PANKAJ_BHARDWAJ_Landing', brand: BRAND_NAME, pixel_id: PIXEL_ID });
-                    console.log(`⏱️ Time on page 60 seconds tracked | ${BRAND_NAME}`);
-                }
-            }
-        }, 1000);
-        
-        // Track button hover intent (shows interest)
-        window.addEventListener('load', function() {
-            const topButtonFinal = document.querySelector('#topJoinBtn');
-            const bottomButtonFinal = document.querySelector('#bottomJoinBtn');
-            
-            function trackHoverIntent(position) {
-                if (typeof fbq === 'function') {
-                    fbq('trackCustom', 'ButtonHoverIntent', {
-                        button_position: position,
-                        event_type: 'hover',
-                        brand: BRAND_NAME,
-                        pixel_id: PIXEL_ID
-                    });
-                    console.log(`🖱️ Hover intent tracked on ${position} button | ${BRAND_NAME}`);
-                }
-            }
-            
-            if (topButtonFinal) {
-                let hoverTimer;
-                topButtonFinal.addEventListener('mouseenter', function() {
-                    hoverTimer = setTimeout(function() {
-                        trackHoverIntent('Top');
-                    }, 500);
-                });
-                topButtonFinal.addEventListener('mouseleave', function() {
-                    if (hoverTimer) clearTimeout(hoverTimer);
-                });
-            }
-            
-            if (bottomButtonFinal) {
-                let hoverTimerBottom;
-                bottomButtonFinal.addEventListener('mouseenter', function() {
-                    hoverTimerBottom = setTimeout(function() {
-                        trackHoverIntent('Bottom');
-                    }, 500);
-                });
-                bottomButtonFinal.addEventListener('mouseleave', function() {
-                    if (hoverTimerBottom) clearTimeout(hoverTimerBottom);
-                });
-            }
-            
-            // Track that user saw the important features section
-            const pointsSection = document.querySelector('.points-section');
-            if (pointsSection && typeof IntersectionObserver !== 'undefined') {
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            if (typeof fbq === 'function') {
-                                fbq('trackCustom', 'FeaturesViewed', {
-                                    section: 'NIFTY_BANKNIFTY_Options',
-                                    timestamp: new Date().toISOString(),
-                                    brand: BRAND_NAME,
-                                    pixel_id: PIXEL_ID
-                                });
-                                console.log(`👁️ Features section viewed - high value content | ${BRAND_NAME}`);
-                            }
-                            observer.disconnect();
-                        }
-                    });
-                }, { threshold: 0.5 });
-                observer.observe(pointsSection);
-            }
-            
-            // Track button impressions
-            const allButtons = [topButtonFinal, bottomButtonFinal].filter(btn => btn);
-            if (typeof IntersectionObserver !== 'undefined') {
-                const impressionObserver = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const btnId = entry.target.id || 'unknown';
-                            const position = btnId === 'topJoinBtn' ? 'Top' : 'Bottom';
-                            if (typeof fbq === 'function') {
-                                fbq('trackCustom', 'ButtonImpression', {
-                                    button_id: btnId,
-                                    button_position: position,
-                                    visible: true,
-                                    brand: BRAND_NAME,
-                                    pixel_id: PIXEL_ID
-                                });
-                                console.log(`👁️ Button impression tracked: ${btnId} | ${BRAND_NAME}`);
-                            }
-                            impressionObserver.unobserve(entry.target);
-                        }
-                    });
-                }, { threshold: 0.5 });
-                allButtons.forEach(btn => impressionObserver.observe(btn));
-            }
-        });
-        
-        // Add additional page view tracking with more details after load
-        window.addEventListener('load', function() {
-            if (typeof fbq === 'function') {
-                fbq('track', 'ViewContent', {
-                    content_type: 'product',
-                    content_ids: ['PANKAJ_BHARDWAJ_TG_LP'],
-                    content_name: 'PANKAJ BHARDWAJ Stock Market Channel',
-                    user_status: 'landing_page_view',
-                    brand: BRAND_NAME,
-                    pixel_id: PIXEL_ID
-                });
-                console.log(`✅ Enhanced ViewContent event tracked after page load | ${BRAND_NAME} | Pixel: ${PIXEL_ID}`);
-            }
-        });
-        
-        console.log(`🎯 NEW Facebook Pixel Active | Pixel ID: ${PIXEL_ID} | ${BRAND_NAME} | Subscribe button tracking fully enabled`);
-        console.log(`🔗 Telegram Link: ${TELEGRAM_LINK}`);
-        console.log(`✅ Events: Lead, Subscribe, CompleteRegistration, Contact, JoinTelegramClick, PankajSubscribeEvent, NewPixel909JoinEvent`);
-        console.log(`✅ Bonus Events: ScrollDepth, TimeOnPage, ButtonHoverIntent, FeaturesViewed, ButtonImpression`);
-    })();
-</script>
+      // Telegram channel link (provided)
+      const TG_LINK = 'https://t.me/+0SnG-TRiwPkyZDg1';
 
-<!-- Noscript fallback for pixel tracking on button click (if JS fails) - NEW PIXEL -->
-<noscript>
-    <div style="display:none;">
-        <img height="1" width="1" style="display:none" alt="fbpixel" 
-             src="https://www.facebook.com/tr?id=909150875148886&ev=Lead&cd[content_name]=PANKAJ_BHARDWAJ_Telegram_Join&noscript=1"/>
-        <img height="1" width="1" style="display:none" alt="fbpixel" 
-             src="https://www.facebook.com/tr?id=909150875148886&ev=Subscribe&cd[content_name]=PANKAJ_BHARDWAJ_Telegram_Channel&noscript=1"/>
-        <img height="1" width="1" style="display:none" alt="fbpixel" 
-             src="https://www.facebook.com/tr?id=909150875148886&ev=CompleteRegistration&noscript=1"/>
-        <img height="1" width="1" style="display:none" alt="fbpixel" 
-             src="https://www.facebook.com/tr?id=909150875148886&ev=Contact&noscript=1"/>
-    </div>
-</noscript>
+      // ---------- HELPER: track FB event + redirect ----------
+      function handleJoinClick(eventName = 'JoinTelegram') {
+        // 1. track Facebook Pixel event (custom or standard)
+        if (typeof fbq === 'function') {
+          fbq('track', eventName, {
+            content_name: 'Telegram_Join',
+            content_category: 'StockMarket_Education',
+            destination: 'Telegram_Channel'
+          });
+          console.log(`✅ Facebook Pixel track: ${eventName}`);
+        } else {
+          console.warn('⚠️ fbq not loaded yet, but redirect will happen.');
+        }
+
+        // 2. small delay to let pixel fire (50ms) then redirect
+        setTimeout(() => {
+          window.open(TG_LINK, '_blank');
+        }, 80);
+      }
+
+      // ---------- BUTTONS ----------
+      const topBtn = document.getElementById('joinTopBtn');
+      const mainBtn = document.getElementById('joinMainBtn');
+
+      // top button (secondary)
+      if (topBtn) {
+        topBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          handleJoinClick('JoinTelegram_Top');
+        });
+      }
+
+      // main button (primary, with pop&move)
+      if (mainBtn) {
+        mainBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          handleJoinClick('JoinTelegram_Main');
+        });
+      }
+
+      // (optional) track any extra click on card itself? but we only want buttons.
+      console.log('🚀 Landing page ready — PANKAJ BHARDWAJ stock market education');
+    })();
+  </script>
+
+  <!-- extra note: inline style for pixel fallback (hidden) -->
+  <style>
+    /* ensure pixel noscript is hidden */
+    noscript img {
+      display: none !important;
+    }
+    /* remove any default button styles */
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+  </style>
 
 </body>
 </html>
